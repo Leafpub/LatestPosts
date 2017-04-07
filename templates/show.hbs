@@ -1,0 +1,24 @@
+<div class="grid-stack-item"
+    data-gs-x="{{x}}" data-gs-y="{{y}}"
+    data-gs-width="{{width}}" data-gs-height="{{height}}" id="{{id}}">
+    <div class="grid-stack-item-content card">
+        <div class="card-header">
+            Latest Posts
+        </div>
+        <div class="card-block">
+            <!--h4 class="card-title">Latest Posts</h4-->
+                <p class="card-text">
+                    <ol>
+                    {{#each posts}}
+                        <li class="mb-2">
+                            <a href="{{admin_url 'posts/'}}{{encode slug}}" title="{{L 'author'}}: {{author}}">    
+                                <img src="{{#if image}}{{image}}{{else}}{{@settings.logo}}{{/if}}" width="30px" height="30px" />
+                                {{title}}
+                            </a>
+                        </li>
+                    {{/each}}
+                    </ol>
+                </p>
+        </div>
+    </div>
+</div>

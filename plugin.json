@@ -1,0 +1,14 @@
+{
+    "name": "Latest Posts",
+    "description": "Shows the 5 latest posts",
+    "version": "1.0.0",
+    "requires": "1.0.0",
+    "author": "Marc",
+    "license": "GPLv3",
+    "link": "https://www.leafpub.org/",
+    "isAdminPlugin": false,
+    "isMiddleware": false,
+    "isWidget": true,
+    "image": "",
+    "routes": []
+}
